@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a">
+       <div data-role="page" id="demo-page" data-url="demo-page" tabindex="0" class="jqm-demos ui-page ui-page-theme-a ui-page-footer-fixed" style="padding-bottom: 62px;">               
+           
+                <div data-role="header" data-position="fixed" data-theme="b" role="banner" class="ui-header ui-bar-b ui-header-fixed slidedown">
+                    <h1 class="ui-title" role="heading" aria-level="1">Home Control</h1>
+                    <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" data-role="button" role="button">Menu</a>
+                    <a href="#right-panel" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-lock" data-role="button" role="button">Login</a>
+                </div>
+                <div role="main" class="ui-content ui-panel-wrapper">
+                    <dl>
+                        <dt>Welcome</dt>
+                        <p>This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.</p>
+                        
+                        <p>This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.</p>
+                        
+                        <p>This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.</p>
+                        
+                        <p>This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.</p>
+                        
+                        <p>This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.
+                        This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home. This Apps for Control your Home.</p>
+                        
+                        
+                    </dl>
+                </div>
+            <!-- /content -->
+            <div data-role="panel" id="left-panel" data-display="push" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-body-b ui-panel-animate ui-panel-closed">
+                <div class="ui-panel-inner">
+                    <div data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-li-static ui-body-inherit ui-collapsible-collapsed">
+                        <h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                            <a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
+                                Room
+                            </a>
+                        </h3>
+                        <div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed"  aria-hidden="true">
+                            <ul class="ui-listview">
+                                <li class="ui-first-child">
+                                    <a href="index.html" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Room A</a>
+                                </li>
+                                <li class="ui-last-child">
+                                    <a href="index.html" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Room B</a>
+                                </li>
+                                <li class="ui-last-child">
+                                    <a href="index.html" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Room C</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left">Close</a>-->
+                </div>
+            </div><!-- /panel -->
+            <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-push ui-body-b ui-panel-animate ui-panel-closed">
+                <div class="ui-panel-inner">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="" autocomplete="off">
+                    <button type="submit" id="submit-8" class="ui-shadow ui-btn ui-corner-all">Sign in</button>
+                    <!--<a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">Close</a>-->
+                </div>
+            </div><!-- /panel -->
+            
+        </div>
+    </body>
+
+</html>
